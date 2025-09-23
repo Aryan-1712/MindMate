@@ -1,15 +1,14 @@
-from django.db import models
 from django.contrib.auth.models import User
+from django.db import models
 
-# Mood tracker for daily logs
 class MoodLog(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)  # optional now
     mood = models.CharField(max_length=50)  # e.g., Happy, Anxious
     notes = models.TextField(blank=True, null=True)  # optional notes
     date = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return f"{self.user.username} - {self.mood} on {self.date}"
+        return f"{self.user.username if self.user else 'Anonymous'} - {self.mood} on {self.date}"
 
 # Therapist info
 class Therapist(models.Model):
@@ -23,10 +22,12 @@ class Therapist(models.Model):
 
 # Optional: Stress/Anxiety analysis
 class StressAnalysis(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     text_input = models.TextField()
-    stress_level = models.CharField(max_length=50)  # e.g., Low, Medium, High
+    stress_level = models.FloatField(null=True, blank=True)
     date = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return f"{self.user.username} - {self.stress_level} on {self.date}"
+        return f"{self.user.username if self.user else 'Anonymous'} - {self.stress_level} on {self.date}"
+
+
