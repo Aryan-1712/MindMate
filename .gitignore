@@ -1,0 +1,18 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# React / Node
+node_modules/
+build/
+dist/
+
+# Environment / Secrets
+.env
+
+# Mac
+.DS_Store
