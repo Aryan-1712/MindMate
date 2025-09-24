@@ -1,0 +1,5 @@
+• Use the web interface to submit mood and stress details multiple times.
+• The AI advice will appear repeatedly in history, showing all past entries.
+• Optional: To use real AI, add your OpenAI key in .env as:
+    OPENAI_API_KEY=your_openai_api_key_here
+• Restart backend after adding the key to enable real AI responses.
