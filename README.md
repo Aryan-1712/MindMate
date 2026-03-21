@@ -1,4 +1,5 @@
 MindMate 🌿
+
 A full-stack mental wellness web app built with Django and React. MindMate helps users track their mood, analyse stress levels, get AI-powered support, and find mental health professionals.
 🚀 Features
 
