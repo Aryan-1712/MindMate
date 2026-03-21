@@ -48,14 +48,19 @@ Visit **http://localhost:3000** to use the app.
 
 Create a `.env` file inside `backend/`:
 ```
-SECRET_KEY=your-django-secret-key
+
 📸 Pages
 
 Landing page — Welcome screen with feature overview
+
 Login / Register — Clean split-screen auth forms
+
 Dashboard — Sidebar navigation with 4 main pages
 
 🙌 Acknowledgements
+
 Built as a personal project to explore full-stack development with Django and React.
+
+
 
 Built with care for mental wellness 🌿
