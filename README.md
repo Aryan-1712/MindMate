@@ -4,13 +4,19 @@ A full-stack mental wellness web app built with Django and React. MindMate helps
 🚀 Features
 
 🌿 Mood Journal — Log daily emotions with emoji selection and personal notes
+
 🧘 Stress Check — Analyse stress from text input with a visual meter and breathing exercise
+
 ✦ AI Companion — Chat-style interface with smart contextual wellness responses
+
 🤝 Find Therapists — Browse and add mental health professionals to a directory
+
 🔐 Authentication — Secure user registration and login with JWT tokens
 
 🛠️ Tech Stack
+
 LayerTechnologyFrontendReact, AxiosBackendDjango, Django REST FrameworkAuthJWT (SimpleJWT)DatabaseSQLiteStylingCustom CSS, DM Sans, DM Serif Display
+
 📁 Project Structure
 MindMate/
 ├── backend/
